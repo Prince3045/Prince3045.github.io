@@ -5,94 +5,109 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Prince Goyal | Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </head>
+
 
 <body>
 
-<div class="clock" id="clock"></div>
-
 <header>
 
-<h2>Prince Goyal</h2>
+<h2 class="logo">PG</h2>
 
 <nav>
 
 <a href="#home">Home</a>
 <a href="#projects">Projects</a>
 <a href="#skills">Skills</a>
-<a href="about.html">About</a>
+<a href="#stats">Stats</a>
 <a href="#contact">Contact</a>
 
 </nav>
 
-<button id="themeToggle">🌙</button>
-
 </header>
 
 
-<section id="home" class="hero reveal">
 
-<img src="profile.png" class="profile">
+<section id="home" class="hero">
+
+<h4>Hello I'm</h4>
 
 <h1>Prince Goyal</h1>
 
-<h2 id="typing"></h2>
+<h2><span id="typing"></span></h2>
 
 <p>
-Java & MERN Stack Developer
+
+Passionate developer building real world software projects.
+
 </p>
+
+
+<div class="social">
+
+<a href="https://github.com/Prince3045" target="_blank">
+<i class="fa-brands fa-github"></i>
+</a>
+
+<a href="https://linkedin.com/in/YOURUSERNAME" target="_blank">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+
+<a href="https://leetcode.com/Prince3045" target="_blank">
+<i class="fa-solid fa-code"></i>
+</a>
+
+</div>
+
 
 <div class="buttons">
 
-<a class="btn" href="resume.pdf">Resume</a>
+<a href="#projects" class="btn">View Projects</a>
 
-<a class="btn" href="https://github.com/Prince3045">GitHub</a>
-
-<a class="btn" href="https://leetcode.com/u/Prince__Goyal/">LeetCode</a>
+<a href="resume.pdf" target="_blank" class="btn">Resume</a>
 
 </div>
 
 </section>
 
 
-<section id="skills" class="reveal">
 
-<h2>Skills</h2>
+<section id="projects">
 
-<div class="skill">
+<h2>Featured Projects</h2>
 
-<p>Java</p>
+<div class="project-grid">
 
-<div class="bar">
-<span style="width:90%"></span>
-</div>
+<div class="card">
 
-</div>
+<h3>Student Result Management</h3>
 
+<p>Python Tkinter result management system.</p>
 
-<div class="skill">
-
-<p>MERN Stack</p>
-
-<div class="bar">
-<span style="width:85%"></span>
-</div>
+<a href="https://github.com/Prince3045">View Project</a>
 
 </div>
 
 
-<div class="skill">
+<div class="card">
 
-<p>Python</p>
+<h3>Student Grading System</h3>
 
-<div class="bar">
-<span style="width:75%"></span>
+<p>MERN stack grading application.</p>
+
+<a href="https://github.com/Prince3045">View Project</a>
+
 </div>
 
 </div>
@@ -100,54 +115,49 @@ Java & MERN Stack Developer
 </section>
 
 
-<section id="projects" class="reveal">
 
-<h2>Projects</h2>
+<section id="skills">
 
-<div id="projects-container" class="projects"></div>
+<h2>Technical Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Node.js</div>
+<div class="skill">MongoDB</div>
+<div class="skill">Java</div>
+<div class="skill">Git</div>
+
+</div>
 
 </section>
 
 
-<section class="github reveal">
 
-<h2>GitHub Stats</h2>
+<section id="stats">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Prince3045&show_icons=true">
+<h2>Developer Stats</h2>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Prince3045">
+<div class="stats-grid">
 
-</section>
+<img src="https://github-readme-stats.vercel.app/api?username=Prince3045&show_icons=true&theme=tokyonight">
 
-
-<section class="leetcode reveal">
-
-<h2>LeetCode</h2>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Prince3045&theme=tokyonight">
 
 <img src="https://leetcard.jacoblin.cool/Prince3045">
 
-</section>
-<section class="leetcode reveal">
-<h2>LeetCode</h2>
-<img src="https://leetcard.jacoblin.cool/Prince3045">
-</section>
-
-
-<section class="social reveal">
-
-<h2>Connect With Me</h2>
-
-<a href="https://github.com/Prince3045">GitHub</a>
-
-<a href="https://linkedin.com/in/prince-goyal-2366162a4/">LinkedIn</a>
-
-<a href="https://leetcode.com/Prince3045">LeetCode</a>
+</div>
 
 </section>
 
 
-<section id="contact" class="reveal">
-<h2>Contact</h2>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
 
 <form action="https://formspree.io/f/xvgpyrzz" method="POST">
 
@@ -163,23 +173,6 @@ Java & MERN Stack Developer
 
 </section>
 
-<section id="contact" class="reveal">
-
-<h2>Contact</h2>
-
-<form action="https://formspree.io/f/xvgpyrzz" method="POST">
-
-<input type="text" name="name" placeholder="Your Name">
-
-<input type="email" name="email" placeholder="Your Email">
-
-<textarea name="message" placeholder="Message"></textarea>
-
-<button type="submit">Send Message</button>
-
-</form>
-
-</section>
 
 
 <footer>
@@ -188,7 +181,9 @@ Java & MERN Stack Developer
 
 </footer>
 
+
 <script src="script.js"></script>
 
 </body>
+
 </html>
