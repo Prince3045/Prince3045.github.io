@@ -1,13 +1,12 @@
 
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>Prince Goyal Portfolio</title>
+<title>Prince Goyal | Developer</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -15,45 +14,40 @@
 
 <body>
 
+<div class="time" id="time"></div>
+
 <header>
 
-<h2 class="logo">Prince Goyal</h2>
+<h2>Prince Goyal</h2>
 
 <nav>
 
-<a href="#home">Home</a>
+<a href="index.html">Home</a>
 <a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
+<a href="about.html">About</a>
 <a href="#contact">Contact</a>
 
 </nav>
 
 </header>
 
+<section class="hero">
 
-<section id="home" class="hero">
+<h1>Hello I'm Prince</h1>
 
-<h3>Hello I'm</h3>
+<h2>Java & MERN Developer</h2>
 
-<h1>Prince Goyal</h1>
-
-<h2>Tech Enthusiast & Developer</h2>
-
-<p>
-
-Building real-world software solutions with Java & MERN stack.
-
-</p>
+<p>Building real world software solutions</p>
 
 <div class="buttons">
 
-<a href="#projects" class="btn">View Projects</a>
+<a href="#projects" class="btn">Projects</a>
 
-<a href="#" class="btn">Resume</a>
+<a href="resume.pdf" class="btn">Resume</a>
+
+<a href="https://leetcode.com" class="btn">LeetCode</a>
 
 </div>
-
-<p id="time"></p>
 
 </section>
 
@@ -66,9 +60,11 @@ Building real-world software solutions with Java & MERN stack.
 
 <div class="card">
 
+<img src="images/project1.png">
+
 <h3>Student Result System</h3>
 
-<p>Python Tkinter based result management.</p>
+<p>Python Tkinter result management system.</p>
 
 <a href="https://github.com/Prince3045">GitHub</a>
 
@@ -76,21 +72,12 @@ Building real-world software solutions with Java & MERN stack.
 
 
 <div class="card">
+
+<img src="images/project2.png">
 
 <h3>Student Grading System</h3>
 
-<p>MERN stack web application.</p>
-
-<a href="https://github.com/Prince3045">GitHub</a>
-
-</div>
-
-
-<div class="card">
-
-<h3>Database Management</h3>
-
-<p>Oracle student database project.</p>
+<p>MERN stack grading application.</p>
 
 <a href="https://github.com/Prince3045">GitHub</a>
 
@@ -101,48 +88,42 @@ Building real-world software solutions with Java & MERN stack.
 </section>
 
 
-<section id="skills">
+<section id="github">
 
-<h2>Skills</h2>
+<h2>GitHub Stats</h2>
 
-<div class="skills">
-
-<span>Java</span>
-<span>React</span>
-<span>NodeJS</span>
-<span>MongoDB</span>
-<span>Python</span>
-<span>SQL</span>
-
-</div>
+<img src="https://github-readme-stats.vercel.app/api?username=Prince3045&show_icons=true&theme=radical">
 
 </section>
 
 
 <section id="contact">
 
-<h2>Contact</h2>
+<h2>Connect With Me</h2>
 
-<p>Email: yourmail@gmail.com</p>
+<div class="social">
 
-<p>
+<a href="https://github.com/Prince3045">GitHub</a>
+<a href="#">LinkedIn</a>
+<a href="#">Instagram</a>
 
-GitHub:
-<a href="https://github.com/Prince3045">Prince3045</a>
+</div>
 
-</p>
+<form action="https://formspree.io/f/xvgpyrzz" method="POST">
+
+<input type="text" name="name" placeholder="Your name" required>
+
+<input type="email" name="email" placeholder="Your email" required>
+
+<textarea name="message" placeholder="Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
 
 </section>
-
-
-<footer>
-
-<p>© 2026 Prince Goyal</p>
-
-</footer>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
