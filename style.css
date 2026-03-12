@@ -1,3 +1,4 @@
+
 body{
 margin:0;
 font-family:Arial;
@@ -14,7 +15,7 @@ background:#020617;
 
 nav a{
 color:white;
-margin:10px;
+margin:15px;
 text-decoration:none;
 }
 
@@ -23,16 +24,17 @@ text-align:center;
 padding:120px;
 }
 
-.hero h1{
-font-size:50px;
+.hero h2{
+font-size:45px;
 }
 
-button{
+.btn{
 padding:12px 20px;
 background:#38bdf8;
-border:none;
 border-radius:20px;
-cursor:pointer;
+text-decoration:none;
+color:black;
+margin:10px;
 }
 
 section{
@@ -40,10 +42,25 @@ padding:80px;
 text-align:center;
 }
 
+.projects{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
 .card{
 background:#1e293b;
 padding:20px;
-margin:20px auto;
 width:250px;
 border-radius:10px;
+}
+
+ul{
+list-style:none;
+padding:0;
+}
+
+li{
+margin:10px;
 }
