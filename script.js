@@ -5,10 +5,7 @@ let now = new Date()
 
 let time = now.toLocaleTimeString()
 
-let date = now.toLocaleDateString()
-
-document.getElementById("time").innerHTML =
-"Live Time: " + time + " | " + date
+document.getElementById("time").innerHTML = time
 
 }
 
