@@ -1,20 +1,43 @@
 
-var typed = new Typed("#typing",{
+const text = ["Java Developer","MERN Stack Developer","DSA Enthusiast"]
 
-strings:[
-"Tech Enthusiast",
-"Full Stack Developer",
-"Java Developer"
-],
+let i=0
+let j=0
+let current=""
+let isDeleting=false
 
-typeSpeed:70,
-backSpeed:50,
-loop:true
+function type(){
 
-});
+current=text[i]
+
+if(isDeleting){
+j--
+}else{
+j++
+}
+
+document.querySelector(".typing").textContent=current.substring(0,j)
+
+if(!isDeleting && j===current.length){
+isDeleting=true
+setTimeout(type,1000)
+return
+}
+
+if(isDeleting && j===0){
+isDeleting=false
+i++
+if(i===text.length){
+i=0
+}
+}
+
+setTimeout(type,120)
+}
+
+type()
 
 
-particlesJS.load(
-'particles-js',
-'https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.json'
-);
+document.getElementById("darkMode").onclick=()=>{
+document.body.classList.toggle("light")
+}
