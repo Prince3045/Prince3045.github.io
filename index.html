@@ -11,15 +11,11 @@
 
 <link rel="stylesheet" href="style.css">
 
-<script src="particles.js"></script>
-
 </head>
 
 <body>
 
-<div id="particles-js"></div>
-
-<div class="time" id="time"></div>
+<div class="clock" id="clock"></div>
 
 <header>
 
@@ -29,68 +25,91 @@
 
 <a href="#home">Home</a>
 <a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
 <a href="about.html">About</a>
 <a href="#contact">Contact</a>
 
 </nav>
 
+<button id="themeToggle">🌙</button>
+
 </header>
 
 
-<section id="home" class="hero">
+<section id="home" class="hero reveal">
+
+<img src="profile.png" class="profile">
 
 <h1>Prince Goyal</h1>
 
 <h2 id="typing"></h2>
 
-<p>Java & MERN Stack Developer</p>
+<p>
+Java & MERN Stack Developer
+</p>
 
 <div class="buttons">
 
-<a href="resume.pdf" class="btn">Download Resume</a>
+<a class="btn" href="resume.pdf">Resume</a>
 
-<a href="https://github.com/Prince3045" class="btn">GitHub</a>
+<a class="btn" href="https://github.com/Prince3045">GitHub</a>
 
-<a href="https://leetcode.com/Prince3045" class="btn">LeetCode</a>
+<a class="btn" href="https://leetcode.com/Prince3045">LeetCode</a>
 
 </div>
 
 </section>
 
 
-<section id="projects">
+<section id="skills" class="reveal">
+
+<h2>Skills</h2>
+
+<div class="skill">
+
+<p>Java</p>
+
+<div class="bar">
+<span style="width:90%"></span>
+</div>
+
+</div>
+
+
+<div class="skill">
+
+<p>MERN Stack</p>
+
+<div class="bar">
+<span style="width:85%"></span>
+</div>
+
+</div>
+
+
+<div class="skill">
+
+<p>Python</p>
+
+<div class="bar">
+<span style="width:75%"></span>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="projects" class="reveal">
 
 <h2>Projects</h2>
 
-<div class="projects">
-
-<div class="card">
-
-<h3>Student Result Management</h3>
-
-<p>Python Tkinter result system</p>
-
-<a href="https://github.com/Prince3045">View Repo</a>
-
-</div>
-
-
-<div class="card">
-
-<h3>Student Grading System</h3>
-
-<p>MERN stack web application</p>
-
-<a href="https://github.com/Prince3045">View Repo</a>
-
-</div>
-
-</div>
+<div id="projects-container" class="projects"></div>
 
 </section>
 
 
-<section>
+<section class="github reveal">
 
 <h2>GitHub Stats</h2>
 
@@ -101,24 +120,39 @@
 </section>
 
 
-<section id="contact">
+<section class="leetcode reveal">
 
-<h2>Contact Me</h2>
+<h2>LeetCode</h2>
+
+<img src="https://leetcard.jacoblin.cool/Prince3045">
+
+</section>
+
+
+<section id="contact" class="reveal">
+
+<h2>Contact</h2>
 
 <form action="https://formspree.io/f/xvgpyrzz" method="POST">
 
-<input type="text" name="name" placeholder="Your name">
+<input type="text" name="name" placeholder="Your Name">
 
-<input type="email" name="email" placeholder="Your email">
+<input type="email" name="email" placeholder="Your Email">
 
 <textarea name="message" placeholder="Message"></textarea>
 
-<button type="submit">Send</button>
+<button type="submit">Send Message</button>
 
 </form>
 
 </section>
 
+
+<footer>
+
+<p>© 2026 Prince Goyal</p>
+
+</footer>
 
 <script src="script.js"></script>
 
